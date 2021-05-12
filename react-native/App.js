@@ -1,1 +1,3 @@
-export { default } from './src/pages/Home';
+import HomePage from './src/pages/Home';
+
+export default HomePage;
