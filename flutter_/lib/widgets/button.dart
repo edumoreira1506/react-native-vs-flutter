@@ -5,17 +5,26 @@ class Button extends StatelessWidget {
   final void Function() onTap;
   final String text;
 
-  Button(this.onTap, this.text);
+  Button({this.onTap, this.text});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(10),
-      child: TextButton(
-        child:
-            Text(this.text, style: TextStyle(color: Colors.red, fontSize: 20)),
-        onPressed: this.onTap,
+    return TextButton(
+      style: ButtonStyle(
+          backgroundColor:
+              MaterialStateProperty.all<Color>(Color.fromRGBO(26, 115, 232, 1)),
+          padding:
+              MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.all(0))),
+      child: Container(
+        child: Text(
+          this.text,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 10,
+          ),
+        ),
       ),
+      onPressed: this.onTap,
     );
   }
 }
