@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
         ),
         body: ListView.builder(
           padding: EdgeInsets.all(10),
-          itemCount: 5,
+          itemCount: 2000,
           itemBuilder: (context, int index) {
             return Item(
               description: 'Cool description',
