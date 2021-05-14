@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
   },
   list: {
     width: '90%',
-    marginBottom: 30
   },
   item: {
     marginBottom: 10,

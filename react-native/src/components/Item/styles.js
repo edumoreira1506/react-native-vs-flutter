@@ -14,10 +14,12 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     color: colors.WHITE,
+    textAlign: 'center'
   },
   description: {
     color: colors.WHITE,
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    textAlign: 'center'
   },
 });
 
